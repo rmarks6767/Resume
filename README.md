@@ -1,4 +1,4 @@
-# River Marks 
+# River Marks - Software Engineering Intern at ThorLabs
 *Last Update 7/22/2019*
 
 ## Personal Info
