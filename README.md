@@ -13,7 +13,7 @@ Linkedin: <a href="https://www.linkedin.com/in/rivermarks/">*River Marks Linkedi
 ## Projects
 ### Imagine RIT Smart Car *<a href="https://github.com/rmarks6767/music-system">Music System</a>* <br>
 ------
-A <a href="https://nodejs.org/">NodeJs</a> REST app that acted as a middleman between Spotify and the Smart Car.  This allowed the other members of the project to make simple requests to the api in order to control different aspects of the music in the car; the volume, song, artist, album, and skip functionalty was included.    
+A <a href="https://nodejs.org/">NodeJs</a> REST api that acted as a middleman between Spotify and the Smart Car.  This allowed the other members of the project to make simple requests to the api in order to control different aspects of the music in the car; the volume, song, artist, album, and skip functionalty was included.    
 
 ## Work Experience 
 ### Software Engineering Internship - ThorLabs
