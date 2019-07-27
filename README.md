@@ -6,15 +6,26 @@
 **Linkedin:** [River Marks](https://www.linkedin.com/in/rivermarks/)
 ## Languages and Technologies
 **Higher Knowledge:** C#, .netCore, GraphQL, GraphQL DotNet <br>
-**Intermediate:** Python, NodeJs, Git, Github, Locust.io, Markdown, Linux (Fedora, Ubuntu) <br>
+**Intermediate:** Python, NodeJs, Git, Github, Locust.io, Markdown, Linux (Fedora & Ubuntu) <br>
 **Curious:** Bash, C++, Rust, JavaScript <br>
 **Learning:** Swift / IOS development <br>
 ## Projects
-### Imagine RIT Smart Car *<a href="https://github.com/rmarks6767/music-system">Music System</a>* <br> 
+### [Imagine RIT Smart Car Music System](https://github.com/rmarks6767/music-system) <br> 
 *2/13/2019 - 4/26/2019 &bull; NodeJs & Javascript*<br>
+#### TL; DR
+* A middleman API to interface with the Spotify Web API and allow different Smart Car features to control music
+* Written in NodeJs and deployed on a local iteration of Openshift, pulling directly from Github
+* All requests are made through URL Queries that directly interface with Spotify
+#### Summary
 A [NodeJs](https://nodejs.org/) REST api that acted as a middleman between Spotify and the Smart Car.  This allowed the other members of the project to make simple requests to the api in order to control different aspects of the music in the car; the volume, song, artist, album, and skip functionalty was included.    
-### Breakwater Game Engine 
+### [Breakwater Game Engine](https://github.com/rmarks6767/Breakwater) 
 *1/19/2019 - 3/30/2019 &bull; C# & Monogame*<br>
+#### TL; DR
+* Team project that uses the MonoGame Graphics Library
+* Implemented Pathfinding for enemy AI based on 2D 'Node' grid
+* Implemented Quad Tree for collision checking in the created world
+#### Summary
+A C# game that utilized the [MonoGame framework](http://www.monogame.net/) for graphics processing.  The idea came to us after the disappointing release of Atlas (A reskin of ARK that aimed at being an open world pirate game).  Our thoughts were to create a world in which the story was not forced upon you, you could play with friends, and the world changed all around you.  We began focusing on the engine aspect of the game, creating a collision system, and path finding system for the enemies in the game. 
 ### Concoria
 *8/31/2019 - 11/5/2019 &bull; Gamemaker language & Gamemaker*<br>
 
