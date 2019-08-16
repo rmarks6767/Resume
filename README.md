@@ -4,7 +4,7 @@
 
 ## Personal Info
 
-**Email Address:** rjm9845@rit.edu <br>
+**Email Address:** rjm9845@rit.edu <br> 
 **Phone Number:** [*See pdf Resume for Phone Number*](https://github.com/rmarks6767/Resume/blob/master/River-Marks-Resume.pdf) <br>
 **Linkedin:** [River Marks](https://www.linkedin.com/in/rivermarks/)
 
@@ -16,7 +16,7 @@
 
 ## Projects
 
-### [Imagine RIT Smart Car Music System](https://github.com/rmarks6767/music-system) <br>
+### [Imagine RIT Smart Car Music System](https://github.com/rmarks6767/music-system) 
 *2/13/2019 - 4/26/2019 &bull; NodeJs & Javascript*
 
 #### TL; DR
@@ -27,7 +27,7 @@
 #### Summary
 A [NodeJs](https://nodejs.org/) REST api that acted as a middleman between Spotify and the Smart Car.  This allowed the other members of the project to make simple requests to the api in order to control different aspects of the music in the car; the volume, song, artist, album, and skip functionalty was included.   <br> 
 
-### [Breakwater Game Engine](https://github.com/rmarks6767/Breakwater) <br>
+### [Breakwater Game Engine](https://github.com/rmarks6767/Breakwater)
 *1/19/2019 - 3/30/2019 &bull; C# & Monogame*<br>
 
 #### TL; DR
