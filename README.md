@@ -1,4 +1,4 @@
-# River Marks - *Software Engineering Intern at [Thorlabs](https://www.thorlabs.com/)*
+# River Marks
 *Computer Science student at [Rochester Institute of Technology](https://www.rit.edu)* <br>
 *3.65 GPA - 2018-2023 (Expected)*
 
