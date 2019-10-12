@@ -14,6 +14,20 @@
 **Curious:** Bash, C++, Rust, JavaScript <br>
 **Learning:** Swift / IOS development <br>
 
+## Work Experience 
+
+### Software Engineering Internship - ThorLabs
+*5/13/2019 - 8/16/2019 &bull; C#, GraphQL, .NetCore, Locust.IO, & Python*
+
+#### TL; DR
+* Developed a proof of concept for utilizing GraphQL DotNet in C# in conjunction with a Cosmos Database
+* Developed a method of translating GraphQL requests directly to SQL to query Cosmos Database
+* Developed algorithms for filtering against Cosmos Database in an effiecent manner
+* Translated the existing REST modeled API to GraphQL and generated a GraphQL schema <br>
+
+#### Summary
+Over the summer of 2019, I was given the task of researching the most efficient way of building an API.  I developed several proof of concepts that would lead to the development of the current API.  I directly influenced the adoption of GraphQL and helped build the ground work of the current API (The one that is currently in production at Thorlabs). I also developed a method of filtering data through the use of complex algorithms to build SQL queries that could be run against Cosmos Database.  This directly influenced the amount of time it took to make requests to Cosmos and brought the response time down from 200+ ms to around 20 ms.  I finally took the existing model that had been drawn up for a REST API and wrote up a GraphQL Schema to allow the team to see everything that needed to be done.
+
 ## Projects
 
 ### [Imagine RIT Smart Car Music System](https://github.com/rmarks6767/music-system) 
@@ -49,36 +63,6 @@ A C# game that utilized the [MonoGame framework](http://www.monogame.net/) for g
 
 #### Summary
 Concoria aimed to be an open world exploring game that allowed you to interact with various cultures and villages accross a living breathing world.  The final product ended up being something that did indeed fall short of our expectations.  We built a game engine and laid the ground work for building the open world that we dreamt of, the only thing holding us back was our artist abilities.  Because we were not good at art in the slightest, the game fell short of the ambitious game we set out to make, but it did however teach us that not everything would turn into something great.
-
-## Work Experience 
-
-### Software Engineering Internship - ThorLabs
-*5/13/2019 - 8/16/2019 &bull; C#, GraphQL, .NetCore, Locust.IO, & Python*
-
-#### TL; DR
-* Developed a proof of concept for utilizing GraphQL DotNet in C# in conjunction with a Cosmos Database
-* Developed a method of translating GraphQL requests directly to SQL to query Cosmos Database
-* Developed algorithms for filtering against Cosmos Database in an effiecent manner
-* Translated the existing REST modeled API to GraphQL and generated a GraphQL schema <br>
-
-#### Summary
-Over the summer of 2019, I was given the task of researching the most efficient way of building an API.  I developed several proof of concepts that would lead to the development of the current API.  I directly influenced the adoption of GraphQL and helped build the ground work of the current API (The one that is currently in production at Thorlabs). I also developed a method of filtering data through the use of complex algorithms to build SQL queries that could be run against Cosmos Database.  This directly influenced the amount of time it took to make requests to Cosmos and brought the response time down from 200+ ms to around 20 ms.  I finally took the existing model that had been drawn up for a REST API and wrote up a GraphQL Schema to allow the team to see everything that needed to be done.
-
-### Summer Technician - Pleasant Valley School District
-*6/17/2018 - 8/10/2018*
-
-#### Summary
-* Worked on a team, setting up new computers
-* Successfully cloned & set up the 225 incoming computers
-* Dealt with PXE boot and partitioning hardrives for install of images
-
-### Technology Sales Associate - Staples
-*5/21/2018 - 8/10/2018*
-
-#### Summary
-* Fixed Customer devices: computers, phone screens, and batteries
-* Sold technology to suit customer's needs
-* Recieved employee of the month for dedication and hard work 
 
 ## Organizations
 
