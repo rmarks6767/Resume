@@ -1,0 +1,172 @@
+\documentclass[12pt,a4paper,roman]{moderncv}
+
+\moderncvstyle{casual}
+\moderncvcolor{orange}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage[scale=0.91]{geometry}
+\usepackage{multicol}
+\usepackage{import}
+
+% Personal Info
+\name{River}{Marks}
+\newcommand{\myemail}{rmarks6767@gmail.com}
+\newcommand{\mygithub}{rmarks6767}
+\newcommand{\myphone}{570-620-8150}
+  
+% Custom commands
+\newcommand*{\experience}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}
+}
+
+\newcommand*{\project}[4][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}
+}
+  
+\newcommand*{\skill}[4][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill
+  {\itshape #3}
+  \par\addvspace{#1}
+}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\vspace*{-17mm}
+
+% Personal info
+\begin{center}
+  \begin{tabular}{ c c c c }
+    \faEnvelopeO\enspace \href{mailto:\myemail}{\myemail} & \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub} & \faMobile\enspace \href{tel:\myphone}{\myphone}\\
+  \end{tabular}
+\end{center}
+
+\section{SKILLS}
+{\skill{Languages}{NodeJS, React, JavaScript, Java, GraphQL, C\#, .NET Core, Python, Markdown}{}}
+{\skill{Tools}{Spring Boot, AWS, MongoDB, MySQL, DynamoDB, Linux (Ubuntu \& Fedora)}{}}
+
+\section{EDUCATION}
+{\experience{GPA: 3.47}{B.S. Computer Science}{Rochester Institute of Technology}{Expected Graduation: December 2022}{}{}}
+
+\section{EXPERIENCE}
+{
+  \experience
+  {May 2021 - Aug 2021}
+  {Software Engineer Intern}
+  {Liberty Mutual Insurance}
+  {Remote}{}
+  {
+    \begin{itemize}
+      \item Created several A/B tests with new experiences in an app for 3rd party aggregators (Shipwright) 
+      \item Developed pattern in Shipwright that didn't preemptively make expensive Carfax calls
+      \item Lead accessibility review of major update in Shipwright using Accessibility Insights for Web
+      \item Utilized React, Jest, and TestCafe to add additional features and updates to Shipwright
+    \end{itemize}
+  }
+}
+{
+  \experience
+  {Aug 2020 - May 2021}
+  {Software Engineer Intern}
+  {Constant Contact}
+  {Remote}{}
+  {
+    \begin{itemize}
+      \item Piloted a new chatbot product offering, developing a rough prototype in NodeJS and React
+      \item Implemented features as a wrapper around an existing AI company's API to assist in custom content injection, 
+      customer customization, and generalization of their product offering
+      \item Rewrote prototyped NodeJS backend in Java Spring Boot with a MySQL database
+      \item Solved complex problems that arose when generalizing the AI company's application
+      \item Delivered product offering to head of engineering, giving greenlight for 2021 road map
+    \end{itemize}
+  }
+}
+{
+  \experience
+  {May 2021 - Aug 2021}
+  {Software Engineer Intern}
+  {Liberty Mutual Insurance}
+  {Remote}{}
+  {
+    \begin{itemize}
+      \item Designed and implemented a NodeJS AWS Lambda for shortening URLs
+      \item Built mock of AWS Lex using React and NodeJS to hold state of conversation in a local env
+      \item Built a method to run AWS Lambdas locally using SAM
+      \item Wrote unit tests using the Jest framework
+    \end{itemize}
+  }
+}
+{
+  \experience
+  {May 2019 - Aug 2019}
+  {Software Engineer Intern}
+  {Thorlabs, Inc.}
+  {Newton, NJ}{}
+  {
+    \begin{itemize}
+      \item Accomplished massive speed increase from C\# .Net Core API by using GraphQL
+      \item Developed a translation between GraphQL queries and SQL selects using LINQ
+      \item Load tested C\# API using Locust.IO and Python
+    \end{itemize}
+  }
+}
+
+\section{PROJECTS}
+{\project{Minecraft Charity Stream}{June 2021 - Present}
+  {\begin{itemize}
+    \item Designed NodeJS backend for supporting player data and purchasable item storage
+    \item Implemented MySQL database for storing and accessing this stored data
+    \item Supported the application while helping raise over \$1000 during the stream
+  \end{itemize}
+  }
+}
+
+\begin{center}
+  \href{https://github.com/\mygithub}{*See other projects on my github*}
+\end{center}
+
+\section{ORGANIZATIONS}
+{\project{Boy Scouts of America}{Eagle Scout}{}}
+{\project{Computer Science House}{Member}{}}
+
+\end{document}
