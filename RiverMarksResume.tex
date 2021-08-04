@@ -60,8 +60,9 @@
   \begin{tabular}{@{}l} 
     {\bfseries #2}
   \end{tabular}
-  \hfill
-  {\itshape #3}
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
   \par\addvspace{#1}
 }
 
@@ -156,6 +157,7 @@
   {\begin{itemize}
     \item Designed NodeJS backend for supporting player data and purchasable item storage
     \item Implemented MySQL database for storing and accessing this stored data
+    \item Created an interface in Java using Spigot to send player data to the NodeJS server
     \item Supported the application while helping raise over \$1000 during the stream
   \end{itemize}
   }
