@@ -10,14 +10,13 @@
 \usepackage{multicol}
 \usepackage{import}
 
-% Personal Info
 \name{River}{Marks}
 \newcommand{\myemail}{rmarks6767@gmail.com}
 \newcommand{\mygithub}{rmarks6767}
 \newcommand{\myphone}{570-620-8150}
 \newcommand{\mywebsite}{rivermarks.me}
-  
-% Custom commands
+
+
 \newcommand*{\experience}[7][.25em]{
   \begin{tabular}{@{}l} 
     {\bfseries #4}
@@ -69,14 +68,10 @@
 
 \setlength{\tabcolsep}{12pt}
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
 \makecvtitle
 \vspace*{-17mm}
 
-% Personal info
 \begin{center}
   \begin{tabular}{ c c c c }
     \faEnvelopeO\enspace \href{mailto:\myemail}{\myemail} & \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub} & \faMobile\enspace \href{tel:\myphone}{\myphone} & \faGlobe\enspace \href{https://rivermarks.me}{\mywebsite} \\
@@ -84,53 +79,26 @@
 \end{center}
 
 \section{SKILLS}
-{\skill{Languages}{NodeJS, React, JavaScript, Java, GraphQL, C\#, Python, C, Markdown, Matlab}{}}
-{\skill{Tools}{Spring Boot, .NET Core, AWS, MongoDB, MySQL, DynamoDB, Linux, OKD}{}}
+{\skill{Languages}{\quad { } TypeScript, JavaScript, CSS, C\#, Java, GraphQL, SQL, Python, C}{}}
+{\skill{Frameworks}{\quad NodeJS, React, .NET Core, Sass, Spring Boot}{}}
+{\skill{Tools}{\quad\quad\quad\quad { }Azure, AWS, MongoDB, MySQL, DynamoDB, Linux, Openshift}{}}
 
 \section{EDUCATION}
-{\experience{GPA: 3.49}{B.S. Computer Science}{Rochester Institute of Technology}{Expected Graduation: December 2022}{}{}}
+{\experience{GPA: 3.50}{B.S. Computer Science}{Rochester Institute of Technology}{December 2022}{}{}}
 
-\textbf{Relevant Courses:}\\
-\begin{minipage}[t]{.3\linewidth}
-  \begin{itemize}
-    \item Intro to Machine Learning
-  \end{itemize}
-\end{minipage}%
-\begin{minipage}[t]{.3\linewidth}
-  \begin{itemize}
-    \item Intro to Computer Vision
-  \end{itemize}
-\end{minipage}
-\begin{minipage}[t]{.35\linewidth}
-  \begin{itemize}
-    \item A.I. Seminar: Information Retrieval
-  \end{itemize}
-\end{minipage}
 \section{EXPERIENCE}
 {
   \experience
-  {May 2022 - Present}
+  {Summers of 2020, 2021, and 2022}
   {Software Engineer Intern}
   {Liberty Mutual Insurance}
   {Seattle, WA}{}
   {
     \begin{itemize}
-      \item Worked on improvements to React components on an internal application used for grading underwriting quality
-      \item Helped design and develop solution for allowing multiple reviewers to grade a single underwriter which included a status enum to determine what stage the review was in
-    \end{itemize}
-  }
-}
-{
-  \experience
-  {May 2021 - Aug 2021}
-  {Software Engineer Intern}
-  {Liberty Mutual Insurance}
-  {Remote}{}
-  {
-    \begin{itemize}
-      \item Created several A/B tests with new experiences in an app for 3rd party aggregators (Shipwright) 
-      \item Developed pattern in Shipwright that didn't preemptively make expensive Carfax calls
-      \item Lead accessibility review of major update in Shipwright using Accessibility Insights for Web
+      \item Improved internal application responsible for assessing underwriting business by developing and implementing multiple reviewer on single assessments
+      \item Designed and implemented a NodeJS AWS Lambda for shortening URLs
+      \item Built mock of AWS Lex using React and NodeJS to hold state of conversation in a local env
+      \item Lead accessibility review of major redesign of customer facing insurance aggregator application
     \end{itemize}
   }
 }
@@ -142,24 +110,10 @@
   {Remote}{}
   {
     \begin{itemize}
-      \item Piloted a new chatbot product offering, developing a rough prototype in NodeJS and React
-      \item Implemented features as a wrapper around an existing AI company's API to assist in custom content injection, 
-      customer customization, and generalization of their product offering
-      \item Rewrote prototyped NodeJS backend in Java Spring Boot with a MySQL database
-    \end{itemize}
-  }
-}
-{
-  \experience
-  {May 2020 - Aug 2020}
-  {Software Engineer Intern}
-  {Liberty Mutual Insurance}
-  {Remote}{}
-  {
-    \begin{itemize}
-      \item Designed and implemented a NodeJS AWS Lambda for shortening URLs
-      \item Built mock of AWS Lex using React and NodeJS to hold state of conversation in a local env
-      \item Built a method to run AWS Lambdas locally using SAM
+      \item Piloted new chatbot offering enabled for customer purchase
+      \item Constructed fullstack middleware around existing chatbot offering, allowing user customization
+      \item Built custom pattern for dynamic injection of content
+      \item Developed simple flow for users to build personalized chatbot
     \end{itemize}
   }
 }
@@ -171,23 +125,43 @@
   {Newton, NJ}{}
   {
     \begin{itemize}
-      \item Accomplished massive speed increase from C\# .Net Core API by using GraphQL
-      \item Developed a translation between GraphQL queries and SQL selects using LINQ
-      \item Load tested C\# API using Locust.IO and Python
+      \item Accomplished 100\% speed increase of C\# .Net Core API using GraphQL
+      \item Developed translation between GraphQL queries and SQL selects using LINQ
+      \item Utilized Locust.IO and Python to load test API
     \end{itemize}
   }
 }
 
 \section{PROJECTS}
-{\project{Minecraft Charity Stream}{June 2021 - Present}
+{
+  \project{Minecraft Charity Stream (MCS)}{Freb 2020 - Current}
   {\begin{itemize}
-    \item Designed NodeJS backend for supporting player data and purchasable item storage
-    \item Developed solution for using a donation platform for accepting donations
-    \item Developed cron job pattern for running commands against a Minecraft server using RCON
-    \item Created ReactJS admin panel for controlling item pricing, active players, and command running
-    \item Created several deployment environments using OKD and Kubernetes
+    \item Designed and iterated application for facilitating annual MCS event 
+    \item Built API layer responsible for managing donations and running server commands
+    \item Implemented account system using Microsoft, Google, and Twitch OAuth
+    \item Created React admin panel for controlling main store application
   \end{itemize}
   }
 }
+{
+  \project{rivermarks.me}{Jun 2021 - Current}
+  {\begin{itemize}
+    \item Developed React and Sass application to highlight work and personal project experience
+    \item Built method of viewing entire website from an in-browser terminal window
+  \end{itemize}
+  }
+}
+{
+  \project{Hey, turn on the projector}{Jun 2020}
+  {\begin{itemize}
+    \item Created wrapper around Epson projector API to facilitate commands
+    \item Developed Google Dialogflow for controlling the projector with Google Home
+  \end{itemize}
+  }
+}
+
+\section{ACHIEVEMENTS}
+{\project{Computer Science House}{Member}{}}
+{\project{Boy Scouts of America}{Eagle Scout}{}}
 
 \end{document}
