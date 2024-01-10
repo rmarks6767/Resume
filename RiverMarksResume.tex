@@ -40,6 +40,22 @@
   \par\addvspace{#1}
 }
 
+\newcommand*{\experiencerole}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}
+}
+
 \newcommand*{\project}[4][.25em]{
   \begin{tabular}{@{}l} 
     {\bfseries #2}
@@ -73,8 +89,8 @@
 \vspace*{-17mm}
 
 \begin{center}
-  \begin{tabular}{ c c c c }
-    \faEnvelopeO\enspace \href{mailto:\myemail}{\myemail} & \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub} & \faMobile\enspace \href{tel:\myphone}{\myphone} & \faGlobe\enspace \href{https://rivermarks.me}{\mywebsite} \\
+  \begin{tabular}{ c c c }
+    \faEnvelopeO\enspace \href{mailto:\myemail}{\myemail} & \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub} & \faMobile\enspace \href{tel:\myphone}{\myphone} \\
   \end{tabular}
 \end{center}
 
@@ -89,22 +105,35 @@
 \section{EXPERIENCE}
 {
   \experience
-  {Jan 2023 - Current}
-  {Technology Associate}
+  {Oct 2023 - Current}
+  {Software Engineer}
   {Liberty Mutual Insurance}
   {Seattle, WA}{}
   {
     \begin{itemize}
-      \item Lead team in designing and implementing applications to perform auditing of the Triton 
-      Applications while coordinating external team dependencies
+      \item Leading initiative in rewriting NodeJS and MySQL application in AWS AppSync and DynamoDB
+      \item Mentored team on working with DynamoDB and AppSync
+      \item Reduced CloudWatch spend by introducing retention periods on AWS Lambdas 
+      \item Actively identifying performance and enhancement opportunities
+    \end{itemize}
+  }
+}
+{
+  \experiencerole
+  {Jan 2023 - Oct 2023}
+  {Technology Associate}
+  {}{}{}
+  {
+    \begin{itemize}
+      \item Lead team in designing and implementing applications to perform auditing of the Call Center 
+      applications while coordinating external team dependencies
       \item Created UI mock-ups and architecture diagrams of the current and future auditing applications
-      \item Engaged with various engineering teams throughout the organization to coordinate efforts
       \item Mentored team members in their continued learning and career development
     \end{itemize}
   }
 }
 {
-  \experience
+  \experiencerole
   {Summers of 2020, 2021, and 2022}
   {Software Engineer Intern}
   {Liberty Mutual Insurance}
@@ -115,7 +144,7 @@
       implementing multiple reviewer on single assessments
       \item Designed and implemented a NodeJS AWS Lambda for shortening URLs
       \item Built mock of AWS Lex using React and NodeJS to hold state of conversation in a local env
-      \item Lead accessibility review on major redesign of customer facing insurance aggregator application
+      \item Led accessibility review on major redesign of customer facing insurance aggregator application
     \end{itemize}
   }
 }
@@ -160,24 +189,8 @@
   \end{itemize}
   }
 }
-% {
-%   \project{rivermarks.me}{Jun 2021 - Current}
-%   {\begin{itemize}
-%     \item Developed React and Sass application to highlight work and personal project experience
-%     \item Built method of viewing entire website from an in-browser terminal window
-%   \end{itemize}
-%   }
-% }
-% {
-%   \project{Hey, turn on the projector}{Jun 2020}
-%   {\begin{itemize}
-%     \item Created wrapper around Epson projector API to facilitate commands
-%     \item Developed Google Dialogflow for controlling the projector with Google Home
-%   \end{itemize}
-%   }
-% }
 
-\section{ACHIEVEMENTS}
-{\project{Boy Scouts of America}{Eagle Scout}{}}
+% \section{ACHIEVEMENTS}
+% {\project{Boy Scouts of America}{Eagle Scout}{}}
 
 \end{document}
