@@ -4,7 +4,7 @@
 \moderncvcolor{orange}
 
 \usepackage[utf8]{inputenc}
-\usepackage{fontawesome}
+
 \usepackage{ragged2e}
 \usepackage[scale=0.91]{geometry}
 \usepackage{multicol}
@@ -90,14 +90,14 @@
 
 \begin{center}
   \begin{tabular}{ c c c }
-    \faEnvelopeO\enspace \href{mailto:\myemail}{\myemail} & \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub} & \faMobile\enspace \href{tel:\myphone}{\myphone} \\
+    \faEnvelope\enspace \href{mailto:\myemail}{\myemail} & \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub} & \faMobile\enspace \href{tel:\myphone}{\myphone} \\
   \end{tabular}
 \end{center}
 
 \section{SKILLS}
 {\skill{Languages}{\quad { } TypeScript, JavaScript, CSS, Java, GraphQL, SQL, Python}{}}
 {\skill{Frameworks}{\quad NodeJS, React, Spring Boot, Express, Sass, .NET Core}{}}
-{\skill{Tools}{\quad\quad\quad\quad { }AWS (Lambda, DynamoDB, Cloudformation, SAM, AppSync), MySQL}{}}
+{\skill{Tools}{\quad\quad\quad\quad { }AWS (Lambda, DynamoDB, CloudFormation, SAM, AppSync, S3, etc), MySQL}{}}
 
 \section{EDUCATION}
 {\experience{GPA: 3.55}{B.S. Computer Science}{Rochester Institute of Technology}{December 2022}{}{}}
@@ -105,16 +105,32 @@
 \section{EXPERIENCE}
 {
   \experience
-  {Oct 2023 - Current}
-  {Software Engineer}
+  {July 2024 - Current}
+  {Senior Software Engineer}
   {Liberty Mutual Insurance}
   {Seattle, WA}{}
   {
+    \begin{itemize} 
+        \item Designed infrastructure for POC to replace vendor application with an internal solution expected to save \$3 million per year
+        \item Mentored five junior engineers in building this aforementioned POC
+        \item Led efforts to productionize the POC, consolidating architecture and increasing resiliency
+        \item Architect-ed and implemented solution to migrate 200k voice recordings from vendor application to internal solution
+        \item Led efforts to create and enact user privileged access patterns to ensure legal compliance
+        \item Outlined work required to build quality management vendor product internally
+    \end{itemize}
+  }
+}
+{
+  \experiencerole
+  {Oct 2023 - July 2024}
+  {Software Engineer}
+  {}{}{}
+  {
     \begin{itemize}
-      \item Leading initiative in rewriting NodeJS and MySQL application in AWS AppSync and DynamoDB
-      \item Mentored team on working with DynamoDB and AppSync
-      \item Reduced CloudWatch spend by introducing retention periods on AWS Lambdas 
-      \item Actively identifying performance and enhancement opportunities
+      \item Led initiative in designing, developing, and carrying out consolidation of two major internal applications into one AWS AppSync API
+      \item Provided technical leadership through mentoring and knowledge sharing, as well as communicating to both technical and business stakeholders
+      \item Led initiative to clean up 11 million stored voice recordings, resulting in \$5,000 per month in savings
+      \item Identified and implemented efficiency improvements in polling user data to better capture changes
     \end{itemize}
   }
 }
@@ -125,72 +141,53 @@
   {}{}{}
   {
     \begin{itemize}
-      \item Lead team in designing and implementing applications to perform auditing of the Call Center 
-      applications while coordinating external team dependencies
-      \item Created UI mock-ups and architecture diagrams of the current and future auditing applications
-      \item Mentored team members in their continued learning and career development
+      \item Led team in designing and developing applications to perform data audits
+      \item Created UI mock-ups and architecture diagrams of current and future auditing applications
+      \item On-boarded new team in using audit applications during transition period
+      \item Took on unofficial lead position to help team members through pain points, generate work efforts, and create architecture diagrams
     \end{itemize}
   }
 }
 {
   \experiencerole
   {Summers of 2020, 2021, and 2022}
-  {Software Engineer Intern}
+  {Software Engineer, Internship}
   {Liberty Mutual Insurance}
   {Remote / Seattle, WA}{}
   {
     \begin{itemize}
-      \item Improved internal application responsible for assessing underwriting business by developing and 
-      implementing multiple reviewer on single assessments
-      \item Designed and implemented a NodeJS AWS Lambda for shortening URLs
-      \item Built mock of AWS Lex using React and NodeJS to hold state of conversation in a local env
-      \item Led accessibility review on major redesign of customer facing insurance aggregator application
+      \item Improved internal application responsible for assessing underwriting business by implementing multiple reviewers on single assessments
+      \item Designed and built NodeJS AWS Lambda for URL shortening
+      \item Built mock AWS Lex using React and NodeJS to hold state of conversation in local environment
     \end{itemize}
   }
 }
 {
   \experience
   {Aug 2020 - May 2021}
-  {Software Engineer Intern}
+  {Software Engineer, Internship}
   {Constant Contact}
   {Remote}{}
   {
     \begin{itemize}
       \item Piloted new chatbot offering enabled for customer purchase
       \item Constructed fullstack middleware around existing chatbot offering, allowing user customization
-      \item Built custom pattern for dynamic injection of content
-      \item Developed simple flow for users to build personalized chatbot
+      \item Achieved green light for building piloted offering into customer product
     \end{itemize}
   }
 }
 {
   \experience
   {May 2019 - Aug 2019}
-  {Software Engineer Intern}
+  {Software Engineer, Internship}
   {Thorlabs, Inc.}
   {Newton, NJ}{}
   {
     \begin{itemize}
       \item Accomplished 100\% speed increase of C\# .Net Core API using GraphQL
       \item Developed translation between GraphQL queries and SQL selects using LINQ
-      \item Utilized Locust.IO and Python to load test API
     \end{itemize}
   }
 }
-
-\section{PROJECTS}
-{
-  \project{Minecraft Charity Stream (MCS)}{Feb 2020 - Current}
-  {\begin{itemize}
-    \item Designed and iterated application for facilitating annual MCS event 
-    \item Built API layer responsible for managing donations and running server commands
-    \item Implemented account system using Microsoft, Google, and Twitch OAuth
-    \item Created React admin panel for controlling main store application
-  \end{itemize}
-  }
-}
-
-% \section{ACHIEVEMENTS}
-% {\project{Boy Scouts of America}{Eagle Scout}{}}
 
 \end{document}
